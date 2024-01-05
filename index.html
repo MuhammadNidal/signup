@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="c:\Users\M Nidal\Documents\Custom Office Templates\io.png" alt="Facebook Logo">
+        </header>
+        <main>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile number:</label>
+                    <input type="tel" id="mobile-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth">Date of birth:</label>
+                    <input type="date" id="date-of-birth" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p class="switch-to-login">Already have an account? <a href="#">Log in</a></p>
+            </form>
+
+            <form id="login-form" style="display: none;">
+                <div class="form-group">
+                    <label for="email-login">Email or mobile number:</label>
+                    <input type="text" id="email-login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-login">Password:</label>
+                    <input type="password" id="password-login" required>
+                </div>
+                <button type="submit">Log In</button>
+                <p class="switch-to-signup">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
